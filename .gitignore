@@ -1,14 +1,16 @@
 # .gitignore file
 # Whitelist files/folders by adding a ! before the file - These will not be ignored
-!*.yaml
-!.gitignore
-!*.md
-!*.sh
-!*.js*
-!blueprints/
-!node-red/
+#!*.yaml
+#!.gitignore
+#!*.md
+#!*.sh
+#!*.js*
+#!blueprints/
+#!node-red/
 
 # Ignore
+deps/
+image/
 .ssh
 .storage
 .cloud
