@@ -1,20 +1,31 @@
 # .gitignore file
 # Whitelist files/folders by adding a ! before the file - These will not be ignored
-*
-!*/
 !*.yaml
 !.gitignore
 !*.md
-!automations/**
+!*.sh
+!*.js*
+!blueprints/
+!node-red/
 
-# Ignore These Folders
+# Ignore
+.ssh
 .storage
 .cloud
+*.google.token
 .google.token
-node-red
+logs
+*.log*
+__pycache__
+*.pyc
+home-assistant_v2.db*
 custom_components
-
-# Ensure these files are ignored for security
+id_rsa*
+*.uuid
+*.db
+*.db-journal
 ip_bans.yaml
+.ip_authenticated.yaml
 secrets.yaml
+.config_entries.json
 known_devices.yaml
