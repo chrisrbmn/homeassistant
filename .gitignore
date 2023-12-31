@@ -9,8 +9,7 @@
 #!node-red/
 
 # Ignore
-deps
-image
+deps/
 .ssh
 .storage
 .cloud
