@@ -1,0 +1,8 @@
+turn_on_office_lights_through_google_home:
+  alias: Turn on Office Lights through Google Home
+  sequence:
+  - service: google_assistant_sdk.send_text_command
+    data:
+      command: activate office
+  icon: mdi:google
+  mode: single

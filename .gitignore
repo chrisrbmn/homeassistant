@@ -1,0 +1,20 @@
+# .gitignore file
+# Whitelist files/folders by adding a ! before the file - These will not be ignored
+*
+!*/
+!*.yaml
+!.gitignore
+!*.md
+!automations/**
+
+# Ignore These Folders
+.storage
+.cloud
+.google.token
+node-red
+custom_components
+
+# Ensure these files are ignored for security
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml

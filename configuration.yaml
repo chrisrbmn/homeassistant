@@ -1,0 +1,26 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+homekit:
+    - name: HomeAssistant Bridge
+      port: 51828
+      filter:
+        include_entities:
+        - camera.2ndfloor_driveway_high
+        - camera.driveway_high
+        - camera.frontdoorbell_high
+        - camera.frontdoorbell_package_camera
+        - camera.garage_high
+        - camera.kitchen_high
+        - camera.landing_railing_high
+        - camera.livingroom_high
+        - camera.utility_room_high
